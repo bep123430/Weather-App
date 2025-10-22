@@ -23,8 +23,9 @@ Run `rspec spec` to test full suite.
 ## Next Steps
 Next steps to improve this application would be:
 1. Create an improved UI. The UI is very simple and not visually appealing- a lot of work would need to be done here in order to make this application user-friendly.
-2. Add logging in the app for better visibility into potential issues.
+2. Add improved error handling when an invalid zip code is inputted.
 3. Add more data to the experience. For example, a user could receive more in-depth weather notifications for severe weather.
-3. Add user authentication and interaction. It would be great for a user to personalize their experience.
-4. Improve testing. The tests are simple and test only a happy path and a sad path.
-5. Add a pre-commit linting hook. Rubocop is run when pushed to Github, but it would be great to catch syntax errors before pushing code.
+4. Add user authentication and interaction. It would be great for a user to personalize their experience.
+5. Improve testing. The tests are simple and test only a happy path and a sad path.
+6. Add a pre-commit linting hook. Rubocop is run when pushed to Github, but it would be great to catch syntax errors before pushing code.
+7. Add logging in the app for better visibility into potential issues.
