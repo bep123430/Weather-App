@@ -1,0 +1,23 @@
+<% if @weather %>
+  <h1>Weather For <%= @weather.zipcode %></h1>
+  <p style="color: blue">Data cached: <%= @weather.cached %></p>
+  <div>
+  <p style="font-weight: bold;">Right Now</p>
+    <div class="today-weather">
+      <p>The current temperature is: <%= @weather.current_weather_data[:current_temp] %></p>
+      <p>It currently feels like: <%= @weather.current_weather_data[:current_feels_like]%></p>
+      <p>The current condition is: <%= @weather.current_weather_data[:current_condition]%></p>
+    </div>
+    <p style="font-weight: bold;">Forecast Data:</p>
+        <% @weather.forecast_data.each do |day| %>
+        <div class="forecast-weather">
+        <p>Date: <%= day[:date] %></p>
+        <p>Max Temp: <%= day[:max_temp] %></p>
+        <p>Min Temp: <%= day[:min_temp] %></p>
+        <p>Condition: <%= day[:condition] %></p>
+      </div>
+    <% end %></p>
+  </div>
+<% else %>
+  <p>No weather data available</p>
+<% end %>
